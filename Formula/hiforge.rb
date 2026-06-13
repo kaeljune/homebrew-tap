@@ -5,21 +5,21 @@
 class Hiforge < Formula
   desc "HiForge CLI — local agent runtime and management tool for the HiForge platform"
   homepage "https://github.com/kaeljune/hiforge-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.2/hiforge-cli-0.1.2-darwin-amd64.tar.gz"
-      sha256 "c0b256c44e3298ced4e98507f5d75c7cefda2101e6d9061ca6b3f74d06ba0b5c"
+      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.3/hiforge-cli-0.1.3-darwin-amd64.tar.gz"
+      sha256 "23013cfc97615a389c7a5e6203e088648abc90c8df94e1cfe7ca1b650bec661c"
 
       define_method(:install) do
         bin.install "hiforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.2/hiforge-cli-0.1.2-darwin-arm64.tar.gz"
-      sha256 "9f381e35c6f71a947ba1113d1a71e9a206b8f19afcefefb40ad21447236c3871"
+      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.3/hiforge-cli-0.1.3-darwin-arm64.tar.gz"
+      sha256 "d9830744d8b592bcca894c3a119876ca4133e133a9c54923d7ba35e2fcf6c8a7"
 
       define_method(:install) do
         bin.install "hiforge"
@@ -29,15 +29,15 @@ class Hiforge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.2/hiforge-cli-0.1.2-linux-amd64.tar.gz"
-      sha256 "71dee355118b248d79b98ebb4230e5bee7077230b75653403e032a99694fd4fb"
+      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.3/hiforge-cli-0.1.3-linux-amd64.tar.gz"
+      sha256 "92754a92bc28bebbc581648fe0501127f727917d65727c06a60a54b559ab4ee1"
       define_method(:install) do
         bin.install "hiforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.2/hiforge-cli-0.1.2-linux-arm64.tar.gz"
-      sha256 "8efa47373aba2db4e06d1cc9930bbc5b26dc0cbe998d3ad071a2d6f96a9cd6d5"
+      url "https://github.com/kaeljune/hiforge-cli/releases/download/v0.1.3/hiforge-cli-0.1.3-linux-arm64.tar.gz"
+      sha256 "cf1ff7ebf2499584ed6656a0ea9915b8490945e0c46ac4083a9bbf8409dfbcb0"
       define_method(:install) do
         bin.install "hiforge"
       end
